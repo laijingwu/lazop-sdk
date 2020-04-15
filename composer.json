@@ -1,0 +1,30 @@
+{
+    "name": "laijingwu/lazop-sdk",
+    "description": "A Lazada Open Platform PHP SDK Library",
+    "keywords": [
+        "lazada",
+        "openplatform",
+        "sdk"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "laijingwu",
+            "email": "admin@laijingwu.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.0",
+        "ext-json": "*",
+        "ext-dom": "*",
+        "ext-simplexml": "*",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": { "Lazada\\OpenPlatform\\" : "src/" }
+    }
+}
