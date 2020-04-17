@@ -8,6 +8,8 @@ use Lazada\OpenPlatform\Exception\RuntimeException;
 use Lazada\OpenPlatform\Request\Authorization\GenerateAccessTokenRequest;
 use Lazada\OpenPlatform\Request\Authorization\RedirectAuthorizeRequest;
 use Lazada\OpenPlatform\Request\Authorization\RefreshAccessTokenRequest;
+use Lazada\OpenPlatform\Request\DataMoat\ComputeRiskRequest;
+use Lazada\OpenPlatform\Request\DataMoat\LoginRequest;
 use Lazada\OpenPlatform\Request\Logistics\GetShipmentProvidersRequest;
 use Lazada\OpenPlatform\Request\Order\GetDocumentRequest;
 use Lazada\OpenPlatform\Request\Order\GetFailureReasonsRequest;
@@ -160,4 +162,19 @@ class Client extends AbstractClient
     }
 
     /** Seller API END **/
+
+
+    /** DataMoat API **/
+
+    public function computeRisk(array $parameters = array())
+    {
+        return $this->createRequest(ComputeRiskRequest::class, $parameters);
+    }
+
+    public function login(array $parameters = array())
+    {
+        return $this->createRequest(LoginRequest::class, $parameters);
+    }
+
+    /** DataMoat API END **/
 }
