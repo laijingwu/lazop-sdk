@@ -11,7 +11,8 @@ class LazopEndpoint
         'vn' => 'https://api.lazada.vn', // Vietnam
         'ph' => 'https://api.lazada.com.ph', // Philippines
         'id' => 'https://api.lazada.co.id', // Indonesia
-        'oauth' => 'https://auth.lazada.com'
+        'oauth' => 'https://auth.lazada.com',
+        'common' => 'https://api.lazada.com'
     ];
 
     const
@@ -48,7 +49,10 @@ class LazopEndpoint
 
         LOGISTICS_GET_SHIPMENT_PROVIDERS_URI = '/shipment/providers/get',
 
-        SELLER_GET_SELLER_URI = '/seller/get'
+        SELLER_GET_SELLER_URI = '/seller/get',
+
+        DATA_MOAT_COMPUTE_RISK_URI = '/datamoat/compute_risk',
+        DATA_MOAT_LOGIN_URI = '/datamoat/login'
     ;
 
     public static function hasLocale($locale)

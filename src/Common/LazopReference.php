@@ -38,6 +38,9 @@ class LazopReference
         PRODUCT_FILTER_IMAGE_MISSING = 'image-missing',
         PRODUCT_FILTER_PENDING = 'pending',
         PRODUCT_FILTER_REJECTED = 'rejected',
-        PRODUCT_FILTER_SOLD_OUT = 'sold-out'
+        PRODUCT_FILTER_SOLD_OUT = 'sold-out',
+
+        LOGIN_SUCCESS = 'success',
+        LOGIN_FAILED = 'fail'
     ;
 }

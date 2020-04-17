@@ -27,7 +27,7 @@ use Lazada\OpenPlatform\Request\Seller\GetSellerRequest;
 
 class Client extends AbstractClient
 {
-    public function getServiceLocale($locale)
+    public function getServiceLocale()
     {
         return $this->getParameter("apiHostKey");
     }

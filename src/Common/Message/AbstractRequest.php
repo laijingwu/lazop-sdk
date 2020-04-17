@@ -120,6 +120,16 @@ abstract class AbstractRequest implements RequestInterface
         return $this->setParameter("appSecret", $value);
     }
 
+    public function getAppName()
+    {
+        return $this->getParameter('appName');
+    }
+
+    public function setAppName($value)
+    {
+        return $this->setParameter('appName', $value);
+    }
+
     public function getAccessToken()
     {
         return $this->getParameter("accessToken");

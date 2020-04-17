@@ -102,6 +102,16 @@ abstract class AbstractClient
         return $this;
     }
 
+    public function getAppName()
+    {
+        return $this->getParameter('appName');
+    }
+
+    public function setAppName($appname)
+    {
+        return $this->setParameter('appName', $appname);
+    }
+
     public function getAccessToken()
     {
         return $this->getParameter("accessToken");

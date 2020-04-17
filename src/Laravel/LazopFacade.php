@@ -22,9 +22,11 @@ use Illuminate\Support\Facades\Facade;
  * @method static setAppId($appid)
  * @method static getAppSecret()
  * @method static setAppSecret($secret)
+ * @method static getAppName()
+ * @method static setAppName($appname)
  * @method static setHttpClient(ClientInterface $client)
  *
- * @method static getServiceLocale($locale)
+ * @method static getServiceLocale()
  * @method static setServiceLocale($locale)
  *
  * @method static authorize(array $parameters = array())

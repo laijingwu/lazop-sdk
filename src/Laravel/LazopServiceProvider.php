@@ -31,6 +31,7 @@ class LazopServiceProvider extends ServiceProvider
             $client = new Client($config->get('e-commerce.lazada.http_client', null));
             $client->setAppId($config->get('e-commerce.lazada.app_id'));
             $client->setAppSecret($config->get('e-commerce.lazada.app_secret'));
+            $client->setAppName($config->get('e-commerce.lazada.app_name'));
             $client->setServiceLocale($config->get('e-commerce.lazada.api_locale'));
             if ($config->get('e-commerce.lazada.debug', false)) {
                 $client->sandbox();

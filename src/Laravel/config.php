@@ -3,6 +3,7 @@ return [
     'lazada' => [
         'debug' => env('APP_DEBUG', false),
         'http_client' => null,
+        'app_name' => '',
         'app_id' => '',
         'app_secret' => '',
         'api_locale' => 'my',

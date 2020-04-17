@@ -14,7 +14,7 @@ class AbstractLazopRequest extends AbstractRequest
 
     protected $requireAuthorization = false;
 
-    public function getServiceLocale($value)
+    public function getServiceLocale()
     {
         return $this->getParameter("serviceLocale");
     }
