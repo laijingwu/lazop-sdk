@@ -8,7 +8,9 @@ class LoginResponse extends AbstractLazopResponse
 {
     public function isSuccessful()
     {
-        return parent::isSuccessful() && $this->data['result']['success'] == 'true';
+        return parent::isSuccessful()
+            && isset($this->data['result']['success'])
+            && $this->data['result']['success'] == 'true';
     }
 
     public function getResult()
@@ -18,7 +20,7 @@ class LoginResponse extends AbstractLazopResponse
 
     public function getMessage()
     {
-        if (parent::isSuccessful()) {
+        if (parent::isSuccessful() && isset($this->data['result']['msg'])) {
             return $this->data['result']['msg'];
         } else {
             return parent::getMessage();

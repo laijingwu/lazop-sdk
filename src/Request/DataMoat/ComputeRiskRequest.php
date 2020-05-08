@@ -36,7 +36,7 @@ class ComputeRiskRequest extends AbstractLazopRequest
         $data = $this->mergeData($data, [
             'time' => strval(time() * 1000),
             'appName' => $this->getAppName(),
-            'userId' => $this->getUserId(),
+            'userId' => strval($this->getUserId()),
             'userIp' => $this->getUserIP(),
             'ati' => $this->getAti()
         ]);
